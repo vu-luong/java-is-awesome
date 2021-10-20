@@ -1,10 +1,9 @@
 package com.vuluong.datastructure;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
 
-class ReadOnlyList<E> implements Iterable<E> {
+class ReadOnlyList<E> {
 	
 	private final List<E> list;
 	
@@ -16,9 +15,8 @@ class ReadOnlyList<E> implements Iterable<E> {
 		return list.get(id);
 	}
 	
-	@Override
-	public Iterator<E> iterator() {
-		return list.iterator();
+	public int size() {
+		return list.size();
 	}
 }
 
@@ -45,6 +43,8 @@ public class GetListExample {
 	public static void main(String[] args) {
 		int M = 10000;
 		int N = 100000;
+		System.out.println("M = " + M);
+		System.out.println("N = " + N);
 		Data data = new Data(M);
 		List<Integer> buffer = new ArrayList<>();
 		
@@ -68,7 +68,8 @@ public class GetListExample {
 		for (int i = 0; i < N; i++) {
 			ReadOnlyList<Integer> readOnlyList = data.getList();
 			
-			for (Integer item : readOnlyList) {
+			for (int j = 0; j < readOnlyList.size(); j++) {
+				Integer item = readOnlyList.get(j);
 				count += item;
 			}
 		}
