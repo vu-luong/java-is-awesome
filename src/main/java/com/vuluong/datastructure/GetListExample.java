@@ -24,7 +24,7 @@ class Data {
 	private List<Integer> list = new ArrayList<>();
 	
 	public Data(int M) {
-		for (int i = 0; i < M; i++) {
+		for (int i = 0; i < M; ++i) {
 			list.add(i);
 		}
 	}
@@ -50,7 +50,7 @@ public class GetListExample {
 		
 		long start = System.currentTimeMillis();
 		long count = 0;
-		for (int i = 0; i < N; i++) {
+		for (int i = 0; i < N; ++i) {
 			buffer.clear();
 			data.getList(buffer);
 			for (Integer item : buffer) {
@@ -65,7 +65,7 @@ public class GetListExample {
 		
 		start = System.currentTimeMillis();
 		count = 0;
-		for (int i = 0; i < N; i++) {
+		for (int i = 0; i < N; ++i) {
 			ReadOnlyList<Integer> readOnlyList = data.getList();
 			
 			for (int j = 0; j < readOnlyList.size(); j++) {
