@@ -24,7 +24,8 @@ public class TreeMapVsHashMapExample {
 		HashMap<Integer, A> hashMap = new HashMap<>();
 		List<Integer> locations1 = new ArrayList<>();
 		List<Integer> locations2 = new ArrayList<>();
-		int N = 10000;
+		int N = 10;
+		System.out.println("N = " + N);
 		int location = 0;
 		for (int i = 0; i < N; ++i) {
 			int gap = random.nextInt(10);
@@ -35,6 +36,9 @@ public class TreeMapVsHashMapExample {
 			treeMap.put(location, item);
 			hashMap.put(location, item);
 		}
+		
+		System.out.println(treeMap);
+		System.out.println(treeMap.lowerEntry(2));
 		
 		Collections.shuffle(locations1);
 		
