@@ -15,6 +15,8 @@ Cool Java features and design patterns that I found difficult to understand or w
   - [TreeMapVsHashMapExample](https://github.com/vu-luong/java-is-awesome/blob/master/src/main/java/com/vuluong/datastructure/TreeMapVsHashMapExample.java)
   
 #### III. Design Patterns
+1. Singleton
+  - [SingletonExample] (https://github.com/vu-luong/java-is-awesome/blob/master/src/main/java/com/vuluong/designpattern/SingletonExample.java)
 
 #### IV. Others
 1. Invoke Apple Script from Java
