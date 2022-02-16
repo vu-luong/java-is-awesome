@@ -38,7 +38,7 @@ class Data {
 	}
 }
 
-public class GetListExample {
+public class ReadOnlyListExample {
 	
 	public static void main(String[] args) {
 		int M = 10000;
