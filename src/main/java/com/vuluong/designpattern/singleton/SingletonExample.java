@@ -1,4 +1,4 @@
-package com.vuluong.designpattern;
+package com.vuluong.designpattern.singleton;
 
 import java.util.HashMap;
 import java.util.Map;
