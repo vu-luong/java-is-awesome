@@ -2,7 +2,6 @@ package com.vuluong.designpattern.facade;
 
 import java.math.BigDecimal;
 import java.util.Hashtable;
-import java.util.Map;
 
 public class BankService {
     private Hashtable<Integer, IAccount> bankAccounts;
@@ -22,6 +21,7 @@ public class BankService {
                 break;
             case "investment":
                 newAccount = new Investment();
+                break;
             default:
                 System.out.println("Invalid account type");
                 break;
