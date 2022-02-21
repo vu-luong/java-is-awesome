@@ -19,6 +19,8 @@ Cool Java features and design patterns that I found difficult to understand or w
   - [SingletonExample](https://github.com/vu-luong/java-is-awesome/blob/master/src/main/java/com/vuluong/designpattern/SingletonExample.java)
 2. Factory Method
   - [FactoryMethodExample](https://github.com/vu-luong/java-is-awesome/tree/master/src/main/java/com/vuluong/designpattern/factorymethod)
+3. Facade
+  - [FacadeExample](https://github.com/vu-luong/java-is-awesome/blob/master/src/main/java/com/vuluong/designpattern/facade/FacadeExample.java)
 
 #### IV. Others
 1. Invoke Apple Script from Java
