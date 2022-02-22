@@ -6,6 +6,7 @@
 
     <groupId>com.vuluong</groupId>
     <artifactId>java-is-awesome</artifactId>
+    <packaging>pom</packaging>
     <version>0.0.1</version>
 
     <build>
@@ -20,6 +21,9 @@
             </plugin>
         </plugins>
     </build>
+    <modules>
+        <module>leetcode</module>
+    </modules>
 
     <dependencies>
         <dependency>
