@@ -24,6 +24,7 @@
     <modules>
         <module>leetcode</module>
         <module>interview</module>
+        <module>educative</module>
     </modules>
 
     <dependencies>
