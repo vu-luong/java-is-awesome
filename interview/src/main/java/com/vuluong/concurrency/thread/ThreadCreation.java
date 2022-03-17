@@ -1,4 +1,4 @@
-package com.vuluong.concurrency;
+package com.vuluong.concurrency.thread;
 
 public class ThreadCreation {
 

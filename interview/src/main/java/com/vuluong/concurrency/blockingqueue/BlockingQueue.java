@@ -1,4 +1,4 @@
-package com.vuluong.concurrency;
+package com.vuluong.concurrency.blockingqueue;
 
 import java.util.LinkedList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package com.vuluong.concurrency;
+package com.vuluong.concurrency.blockingqueue;
 
 public class BlockingQueueExample {
     private static final BlockingQueue<Integer> blockingQueue = new BlockingQueue<>();
