@@ -22,10 +22,10 @@ Cool Java features and design patterns that I found difficult to understand or w
 - [Source code](https://github.com/vu-luong/java-is-awesome/tree/master/leetcode/src/main/java/com/vuluong)
 
 ### C. Interview
-1. Concurrecy:
-  - BlockingQueue: [Example](https://github.com/vu-luong/java-is-awesome/tree/master/interview/src/main/java/com/vuluong/concurrency/blockingqueue)
-  - Mutex: [Example](https://github.com/vu-luong/java-is-awesome/tree/master/interview/src/main/java/com/vuluong/concurrency/mutex)
-  - Semaphore: [Example](https://github.com/vu-luong/java-is-awesome/tree/master/interview/src/main/java/com/vuluong/concurrency/semaphore)
-  - Thread: [Example](https://github.com/vu-luong/java-is-awesome/tree/master/interview/src/main/java/com/vuluong/concurrency/thread)
-  - Phaser: [Example](https://github.com/vu-luong/java-is-awesome/tree/master/interview/src/main/java/com/vuluong/concurrency/phaser)
+#### I. Concurrecy:
+  1. BlockingQueue: [Example](https://github.com/vu-luong/java-is-awesome/tree/master/interview/src/main/java/com/vuluong/concurrency/blockingqueue)
+  2. Mutex: [Example](https://github.com/vu-luong/java-is-awesome/tree/master/interview/src/main/java/com/vuluong/concurrency/mutex)
+  3. Semaphore: [Example](https://github.com/vu-luong/java-is-awesome/tree/master/interview/src/main/java/com/vuluong/concurrency/semaphore)
+  4. Thread: [Example](https://github.com/vu-luong/java-is-awesome/tree/master/interview/src/main/java/com/vuluong/concurrency/thread)
+  5. Phaser: [Example](https://github.com/vu-luong/java-is-awesome/tree/master/interview/src/main/java/com/vuluong/concurrency/phaser)
 ### D. Educative
