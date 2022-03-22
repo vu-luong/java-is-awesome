@@ -1,4 +1,4 @@
-package com.vuluong;
+package com.vuluong.leetcode;
 
 import java.util.concurrent.Semaphore;
 

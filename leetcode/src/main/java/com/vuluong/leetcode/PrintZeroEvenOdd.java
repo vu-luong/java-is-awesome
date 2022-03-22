@@ -1,3 +1,5 @@
+package com.vuluong.leetcode;
+
 class PrintZeroEvenOdd {
     private int n;
     private Semaphore sZero = new Semaphore(1);

@@ -1,4 +1,4 @@
-package com.vuluong.multithread.unsafe;
+package com.vuluong.educative.multithread.unsafe;
 
 public class UnsafeThreadExample {
     

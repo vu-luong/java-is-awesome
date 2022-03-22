@@ -1,4 +1,4 @@
-package datastructure;
+package com.vuluong.datastructure;
 
 import java.util.ArrayList;
 import java.util.List;

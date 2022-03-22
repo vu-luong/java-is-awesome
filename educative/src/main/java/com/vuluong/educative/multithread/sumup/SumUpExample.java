@@ -1,4 +1,4 @@
-package com.vuluong.multithread.sumup;
+package com.vuluong.educative.multithread.sumup;
 
 public class SumUpExample {
     private static final long MAX_NUM = Integer.MAX_VALUE;

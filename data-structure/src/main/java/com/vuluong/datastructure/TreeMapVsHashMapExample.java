@@ -1,4 +1,4 @@
-package datastructure;
+package com.vuluong.datastructure;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
