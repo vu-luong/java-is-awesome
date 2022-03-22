@@ -23,8 +23,11 @@
     </build>
     <modules>
         <module>leetcode</module>
-        <module>interview</module>
         <module>educative</module>
+        <module>design-pattern</module>
+        <module>concurrency</module>
+        <module>cli</module>
+        <module>data-structure</module>
     </modules>
 
     <dependencies>
