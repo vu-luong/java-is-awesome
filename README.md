@@ -6,8 +6,10 @@ Cool Java features and design patterns that I found difficult to understand or w
 #### Module I - Design Patterns
 1. [Singleton](https://github.com/vu-luong/java-is-awesome/tree/master/design-pattern/src/main/java/com/vuluong/designpattern/singleton)
 2. [Factory Method](https://github.com/vu-luong/java-is-awesome/tree/master/design-pattern/src/main/java/com/vuluong/designpattern/factorymethod)
-3. [Facade](https://github.com/vu-luong/java-is-awesome/tree/master/design-pattern/src/main/java/com/vuluong/designpattern/facade)
-4. [Bridge](https://github.com/vu-luong/java-is-awesome/tree/master/design-pattern/src/main/java/com/vuluong/designpattern/bridge)
+3. [Builder](https://github.com/vu-luong/java-is-awesome/tree/master/design-pattern/src/main/java/com/vuluong/designpattern/builder)
+4. [Facade](https://github.com/vu-luong/java-is-awesome/tree/master/design-pattern/src/main/java/com/vuluong/designpattern/facade)
+5. [Bridge](https://github.com/vu-luong/java-is-awesome/tree/master/design-pattern/src/main/java/com/vuluong/designpattern/bridge)
+6. [Interpreter](https://github.com/vu-luong/java-is-awesome/tree/master/design-pattern/src/main/java/com/vuluong/designpattern/interpreter)
 #### Module II - Concurrency
 1. [`volatile` vs. `Atomic`](https://github.com/vu-luong/java-is-awesome/tree/master/concurrency/src/main/java/com/vuluong/concurrency/atomic)
 2. [BlockingQueue](https://github.com/vu-luong/java-is-awesome/tree/master/concurrency/src/main/java/com/vuluong/concurrency/blockingqueue)
