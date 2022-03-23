@@ -10,21 +10,23 @@ public class SingletonExample {
         context.addSingleton(new FooRepo());
         context.addSingleton(new BarRepo());
         context.addSingleton(new FooBarService());
-        
         FooBarService fooBarService = context.getSingleton(FooBarService.class);
         System.out.println(fooBarService.fooBar());
     }
     
     private static class Context {
         private final Map<Class<?>, Object> singletons;
-        private final static Context CONTEXT = new Context();
+
+        private static class SingletonHolder {
+            public static final Context INSTANCE = new Context();
+        }
         
         private Context() {
             this.singletons = new HashMap<>();
         }
         
         public static Context getInstance() {
-            return CONTEXT;
+            return SingletonHolder.INSTANCE;
         }
         
         public void addSingleton(Object singleton) {
