@@ -1,11 +1,14 @@
 package com.vuluong.leetcode;
 
+import java.util.concurrent.Semaphore;
+import java.util.function.IntConsumer;
+
 class PrintZeroEvenOdd {
     private int n;
     private Semaphore sZero = new Semaphore(1);
     private Semaphore sEven = new Semaphore(0);
     private Semaphore sOdd = new Semaphore(0);
-    
+
     public PrintZeroEvenOdd(int n) {
         this.n = n;
     }
@@ -15,7 +18,7 @@ class PrintZeroEvenOdd {
         for (int i = 1; i <= n; i++) {
             sZero.acquire();
             printNumber.accept(0);
-            
+
             if (i % 2 == 0) {
                 sEven.release();
             } else {
