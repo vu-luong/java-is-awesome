@@ -1,10 +1,10 @@
 package com.vuluong.designpattern.builder;
 
 public class BankAccount {
-    private String name;
-    private String accountNumber;
-    private String email;
-    private boolean newsletter;
+    private final String name;
+    private final String accountNumber;
+    private final String email;
+    private final boolean newsletter;
 
     private BankAccount(Builder builder) {
         this.name = builder.name;
@@ -34,8 +34,8 @@ public class BankAccount {
     }
 
     public static class Builder {
-        private String name;
-        private String accountNumber;
+        private final String name;
+        private final String accountNumber;
         private String email;
         private boolean newsletter;
 

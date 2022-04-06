@@ -28,6 +28,7 @@
         <module>concurrency</module>
         <module>cli</module>
         <module>data-structure</module>
+        <module>mvc-example</module>
     </modules>
 
     <dependencies>
