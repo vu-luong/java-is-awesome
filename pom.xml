@@ -29,6 +29,7 @@
         <module>cli</module>
         <module>data-structure</module>
         <module>mvc-example</module>
+        <module>socket-programming</module>
     </modules>
 
     <dependencies>
