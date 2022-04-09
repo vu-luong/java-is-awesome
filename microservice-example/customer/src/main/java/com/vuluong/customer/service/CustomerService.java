@@ -1,9 +1,12 @@
 package com.vuluong.customer.service;
 
+import com.vuluong.clients.fraud.FraudCheckResponse;
+import com.vuluong.clients.fraud.FraudClient;
+import com.vuluong.clients.notification.NotificationClient;
+import com.vuluong.clients.notification.NotificationRequest;
 import com.vuluong.customer.Customer;
 import com.vuluong.customer.CustomerRegistrationRequest;
 import com.vuluong.customer.CustomerRepository;
-import com.vuluong.customer.FraudCheckResponse;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
@@ -12,7 +15,8 @@ import org.springframework.web.client.RestTemplate;
 @AllArgsConstructor
 public class CustomerService {
     private final CustomerRepository customerRepository;
-    private final RestTemplate restTemplate;
+    private final FraudClient fraudClient;
+    private final NotificationClient notificationClient;
 
     public void registerCustomer(CustomerRegistrationRequest request) {
         Customer customer = Customer.builder()
@@ -22,14 +26,20 @@ public class CustomerService {
             .build();
         // TODO
         customerRepository.saveAndFlush(customer);
-        FraudCheckResponse fraudCheckResponse = restTemplate.getForObject(
-            "http://FRAUD/api/v1/fraud-check/{customerId}",
-            FraudCheckResponse.class,
-            customer.getId()
-        );
+        FraudCheckResponse fraudCheckResponse = fraudClient.isFraudster(customer.getId());
 
         if (fraudCheckResponse != null && fraudCheckResponse.getIsFraudster()) {
             throw new IllegalStateException("fraudster");
         }
+
+        // todo: make it async. i.e. add to queue
+        NotificationRequest notificationRequest = new NotificationRequest();
+        notificationRequest.setToCustomerId(customer.getId());
+        notificationRequest.setToCustomerName(customer.getEmail());
+        notificationRequest.setMessage(String.format(
+            "Hi %s, welcome to Microservice...",
+            customer.getFirstName()
+        ));
+        notificationClient.sendNotification(notificationRequest);
     }
 }

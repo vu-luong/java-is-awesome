@@ -1,5 +1,6 @@
 package com.vuluong.fraud;
 
+import com.vuluong.clients.fraud.FraudCheckResponse;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.*;
@@ -17,6 +18,9 @@ public class FraudController {
     ) {
         boolean isFraudulentCustomer = fraudCheckService.isFraudulentCustomer(customerId);
         log.info("fraud check request for customer {}", customerId);
-        return new FraudCheckResponse(isFraudulentCustomer);
+
+        FraudCheckResponse response = new FraudCheckResponse();
+        response.setIsFraudster(isFraudulentCustomer);
+        return response;
     }
 }

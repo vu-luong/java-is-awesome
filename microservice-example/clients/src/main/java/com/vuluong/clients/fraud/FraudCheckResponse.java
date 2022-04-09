@@ -1,4 +1,4 @@
-package com.vuluong.customer;
+package com.vuluong.clients.fraud;
 
 import lombok.Data;
 
