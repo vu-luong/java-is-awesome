@@ -1,22 +1,21 @@
 package com.vuluong.customer.service;
 
+import com.vuluong.amqp.RabbitMQMessageProducer;
 import com.vuluong.clients.fraud.FraudCheckResponse;
 import com.vuluong.clients.fraud.FraudClient;
-import com.vuluong.clients.notification.NotificationClient;
 import com.vuluong.clients.notification.NotificationRequest;
 import com.vuluong.customer.Customer;
 import com.vuluong.customer.CustomerRegistrationRequest;
 import com.vuluong.customer.CustomerRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
-import org.springframework.web.client.RestTemplate;
 
 @Service
 @AllArgsConstructor
 public class CustomerService {
     private final CustomerRepository customerRepository;
+    private final RabbitMQMessageProducer rabbitMQMessageProducer;
     private final FraudClient fraudClient;
-    private final NotificationClient notificationClient;
 
     public void registerCustomer(CustomerRegistrationRequest request) {
         Customer customer = Customer.builder()
@@ -40,6 +39,11 @@ public class CustomerService {
             "Hi %s, welcome to Microservice...",
             customer.getFirstName()
         ));
-        notificationClient.sendNotification(notificationRequest);
+
+        rabbitMQMessageProducer.publish(
+            notificationRequest,
+            "internal.exchange",
+            "internal.notification.routing-key"
+        );
     }
 }
