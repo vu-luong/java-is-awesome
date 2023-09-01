@@ -28,6 +28,7 @@ Cool Java features and design patterns that I found difficult to understand or w
 7. [SimplifyPath](https://github.com/vu-luong/java-is-awesome/blob/master/leetcode/src/main/java/com/vuluong/leetcode/SimplifyPath.java)
 8. [TextJustification](https://github.com/vu-luong/java-is-awesome/blob/master/leetcode/src/main/java/com/vuluong/leetcode/TextJustification.java)
 9. [WebCrawlerMultithreaded](https://github.com/vu-luong/java-is-awesome/blob/master/leetcode/src/main/java/com/vuluong/leetcode/WebCrawlerMultithreaded.java)
+10. [DecodeString](https://github.com/vu-luong/java-is-awesome/blob/master/leetcode/src/main/java/com/vuluong/leetcode/DecodeString.java)
   
 #### Module IV - Data structures
 1. [`TreeMap` vs. `HashMap`](https://github.com/vu-luong/java-is-awesome/blob/master/data-structure/src/main/java/com/vuluong/datastructure/TreeMapVsHashMapExample.java)
