@@ -47,7 +47,7 @@ public class GoodExample {
     }
 
     public interface XMLConsumer {
-        void consume(XML xml);
+        void doAction(XML xml);
     }
 
     public static class ThirdPartyXmlAdapter implements XMLConsumer {
@@ -55,7 +55,7 @@ public class GoodExample {
         private final ThirdPartyInterface thirdParty = new ThirdPartyClass();
 
         @Override
-        public void consume(XML xml) {
+        public void doAction(XML xml) {
             thirdParty.doSpecificAction(convertXml2Json(xml));
         }
 
@@ -73,7 +73,7 @@ public class GoodExample {
 
         public void doBusinessLogic(XMLConsumer client) {
             XML xml = new XML("this is xml data");
-            client.consume(xml);
+            client.doAction(xml);
         }
     }
 
