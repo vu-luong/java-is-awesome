@@ -1,4 +1,4 @@
-package com.vuluong.designpattern.builder;
+package com.vuluong.designpattern.builder.simple;
 
 public class BuilderExample {
 
