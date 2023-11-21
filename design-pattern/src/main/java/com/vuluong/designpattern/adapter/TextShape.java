@@ -1,8 +1,8 @@
-package com.vuluong.designpattern.bridge;
+package com.vuluong.designpattern.adapter;
 
-import com.vuluong.designpattern.bridge.manipulator.Manipulator;
-import com.vuluong.designpattern.bridge.manipulator.TextManipulator;
-import com.vuluong.designpattern.bridge.toolkit.TextView;
+import com.vuluong.designpattern.adapter.manipulator.Manipulator;
+import com.vuluong.designpattern.adapter.manipulator.TextManipulator;
+import com.vuluong.designpattern.adapter.toolkit.TextView;
 
 public class TextShape implements Shape {
 

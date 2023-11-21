@@ -1,4 +1,4 @@
-package com.vuluong.designpattern.bridge;
+package com.vuluong.designpattern.adapter;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

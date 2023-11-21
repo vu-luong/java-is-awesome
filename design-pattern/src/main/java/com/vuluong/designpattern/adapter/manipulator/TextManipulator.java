@@ -1,6 +1,6 @@
-package com.vuluong.designpattern.bridge.manipulator;
+package com.vuluong.designpattern.adapter.manipulator;
 
-import com.vuluong.designpattern.bridge.Shape;
+import com.vuluong.designpattern.adapter.Shape;
 
 public class TextManipulator implements Manipulator {
 
