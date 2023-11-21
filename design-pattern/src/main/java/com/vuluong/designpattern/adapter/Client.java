@@ -2,6 +2,7 @@ package com.vuluong.designpattern.adapter;
 
 import com.vuluong.designpattern.adapter.toolkit.TextView;
 import com.vuluong.designpattern.adapter.toolkit.TextViewImpl;
+import com.vuluong.designpattern.common.Point;
 
 public class Client {
     

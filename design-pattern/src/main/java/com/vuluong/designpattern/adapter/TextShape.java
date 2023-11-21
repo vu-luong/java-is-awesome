@@ -3,6 +3,7 @@ package com.vuluong.designpattern.adapter;
 import com.vuluong.designpattern.adapter.manipulator.Manipulator;
 import com.vuluong.designpattern.adapter.manipulator.TextManipulator;
 import com.vuluong.designpattern.adapter.toolkit.TextView;
+import com.vuluong.designpattern.common.Point;
 
 public class TextShape implements Shape {
 

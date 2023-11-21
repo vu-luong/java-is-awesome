@@ -1,4 +1,4 @@
-package com.vuluong.designpattern.adapter;
+package com.vuluong.designpattern.common;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -7,4 +7,8 @@ import lombok.Data;
 @AllArgsConstructor
 public class Point {
     private double x, y;
+
+    public static Point of(double x, double y) {
+        return new Point(x, y);
+    }
 }
