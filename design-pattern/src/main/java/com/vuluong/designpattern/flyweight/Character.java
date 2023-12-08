@@ -10,17 +10,17 @@ public class Character implements Glyph {
 
     @Override
     public void draw(Window window, GlyphContext context) {
-
+        System.out.println("drawing '" + this.charcode + "' in " + window + " with " + context);
     }
 
     @Override
     public void setFont(Font font, GlyphContext context) {
-
+        context.setFont(font);
     }
 
     @Override
     public Font getFont(GlyphContext context) {
-        return null;
+        return context.getFont();
     }
 
     @Override
